@@ -1,4 +1,4 @@
-FROM php:7.1.4-fpm
+FROM php:7.1.5-fpm
 
 RUN apt-get update && apt-get install -y --no-install-recommends git libpng12-dev zlib1g-dev libicu-dev g++ libjpeg-dev libpq-dev libmemcached11 libmemcached-dev libmcrypt-dev libfreetype6-dev libgd-dev openssl libc-client-dev libkrb5-dev libbz2-dev \
    && apt-get clean && rm -rf /var/lib/apt/lists/* \
