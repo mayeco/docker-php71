@@ -6,4 +6,4 @@ RUN apt-get update && apt-get install -y --no-install-recommends git libpng12-de
    && docker-php-ext-configure imap --with-kerberos --with-imap-ssl \
    && mkdir -p /usr/src/php/ext/memcached && git clone -b php7 https://github.com/php-memcached-dev/php-memcached.git /usr/src/php/ext/memcached \
    && mkdir -p /usr/src/php/ext/redis && git clone -b php7 https://github.com/phpredis/phpredis.git /usr/src/php/ext/redis \
-   && docker-php-ext-install bz2 calendar gd mbstring memcached imap mcrypt exif intl opcache redis pdo pdo_mysql ftp zip
+   && docker-php-ext-install bz2 calendar gd mbstring bcmath memcached imap mcrypt exif intl opcache redis pdo pdo_mysql ftp zip
